@@ -32,7 +32,8 @@ stages:
           repository: $(webRepository)
           dockerfile: '$(Build.SourcesDirectory)/Tailspin.SpaceGame.Web/Dockerfile'
           #containerRegistry: 'sergiizhuravskyi/public_sz_repo_001'
-          containerRegistry: 'Container Registry Connection'
+          #containerRegistry: 'Container Registry Connection'
+          containerRegistry: testregistrysz002
           tags: |
             $(tag)
   - stage: 'Deploy'
