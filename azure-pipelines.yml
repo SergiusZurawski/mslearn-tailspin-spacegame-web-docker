@@ -21,7 +21,7 @@ stages:
           buildContext: $(Build.Repository.LocalPath)
           repository: $(webRepository)
           dockerfile: '$(Build.SourcesDirectory)/Tailspin.SpaceGame.Web/Dockerfile'
-          #containerRegistry: 'Container Registry Connection'
+          containerRegistry: 'sergiizhuravskyi/public_sz_repo_001'
           tags: |
             $(tag)
   - stage: 'Deploy'
