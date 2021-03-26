@@ -34,6 +34,7 @@ stages:
           containerRegistry: 'DockerSZ'
           #containerRegistry: 'Container Registry Connection'
           #containerRegistry: testregistrysz002
+          #azureSubscriptionEndpoint: $(azureSubscriptionEndpoint)
           tags: |
             $(tag)
   - stage: 'Deploy'
