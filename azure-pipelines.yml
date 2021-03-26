@@ -29,7 +29,8 @@ stages:
         inputs:
           command: buildAndPush
           buildContext: $(Build.Repository.LocalPath)
-          repository: $(webRepository)
+          #repository: $(webRepository)
+          repository: 'sergiizhuravskyi/public_sz_repo_001'
           dockerfile: '$(Build.SourcesDirectory)/Tailspin.SpaceGame.Web/Dockerfile'
           containerRegistry: 'DockerSZ'
           #containerRegistry: 'Container Registry Connection'
