@@ -52,5 +52,5 @@ stages:
         inputs:
           appName: $(WebAppName)
           #azureSubscription: 'Resource Manager - Tailspin - Space Game'
-          azureSubscription: 'VSPS_testsz001'
+          azureSubscription: 'VSPS_testsz001_connection'
           imageName: $(RegistryName)/$(webRepository):$(build.buildId)
