@@ -55,4 +55,5 @@ stages:
           appName: TestLinuxAPP003
           #azureSubscription: 'Resource Manager - Tailspin - Space Game'
           azureSubscription: 'VSPS_testsz001_connection_rm'
-          imageName: $(RegistryName)/$(webRepository):$(build.buildId)
+          #imageName: $(RegistryName)/$(webRepository):$(build.buildId)
+          imageName: sergiizhuravskyi/public_sz_repo_001:$(build.buildId)
