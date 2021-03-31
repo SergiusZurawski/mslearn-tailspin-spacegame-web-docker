@@ -52,7 +52,7 @@ stages:
       - task: AzureWebAppContainer@1
         inputs:
           #appName: $(WebAppName)
-          appName: MyFirsrtApp
+          appName: TestLinuxAPP003
           #azureSubscription: 'Resource Manager - Tailspin - Space Game'
           azureSubscription: 'VSPS_testsz001_connection_rm'
           imageName: $(RegistryName)/$(webRepository):$(build.buildId)
