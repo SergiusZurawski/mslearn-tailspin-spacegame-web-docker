@@ -51,7 +51,8 @@ stages:
       steps:
       - task: AzureWebAppContainer@1
         inputs:
-          appName: $(WebAppName)
+          #appName: $(WebAppName)
+          appName: MyFirsrtApp
           #azureSubscription: 'Resource Manager - Tailspin - Space Game'
           azureSubscription: 'VSPS_testsz001_connection_rm'
           imageName: $(RegistryName)/$(webRepository):$(build.buildId)
